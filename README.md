@@ -47,5 +47,10 @@ php artisan migrate --seed
 # 5. Start development server
 composer run dev
 
-# 5. APP_URL 
+# 6. APP_URL 
 http://localhost:8000
+
+# 7. Login Credentials
+Email: admin@example.com
+Password: 12345678
+
