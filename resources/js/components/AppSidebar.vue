@@ -24,11 +24,6 @@ const mainNavItems: NavItem[] = [
         href: '/products',
         icon: List,
     },
-    // {
-    //     title: 'Category Create',
-    //     href: '/categories/create',
-    //     icon: BookPlus,
-    // },
 ];
 
 const footerNavItems: NavItem[] = [

@@ -2,8 +2,6 @@
     <AppLayout :breadcrumbs="breadcrumbs">
 
         <Head title="Category Create" />
-
-        <!-- <CategoriesLayout> -->
             <div class="p-6">
                 <form @submit.prevent="submit">
                     <input v-model="form.name" type="text" placeholder="Name" class="border p-2 rounded w-full" />
@@ -11,7 +9,6 @@
                     <button type="submit" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Save</button>
                 </form>
             </div>
-        <!-- </CategoriesLayout> -->
     </AppLayout>
 
 
@@ -21,7 +18,6 @@
 import { Head, Link, useForm, usePage } from '@inertiajs/vue3';
 import { type BreadcrumbItem } from '@/types';
 import AppLayout from '@/layouts/AppLayout.vue';
-import CategoriesLayout from '@/layouts/categories/Layout.vue';
 
 const form = useForm({ name: '' });
 const breadcrumbs: BreadcrumbItem[] = [

@@ -2,8 +2,6 @@
     <AppLayout :breadcrumbs="breadcrumbs">
 
         <Head title="Category Create" />
-
-        <!-- <CategoriesLayout> -->
         <div class="p-6">
             <div class="overflow-x-auto text-sm">
                 <Link href="/categories/create" class="float-right text-blue-500 hover:underline mr-2">Create</Link>
@@ -36,7 +34,6 @@
 
 
         </div>
-        <!-- </CategoriesLayout> -->
     </AppLayout>
 
 </template>
@@ -45,12 +42,8 @@
 import { Head, Link, router, usePage } from '@inertiajs/vue3';
 import { type BreadcrumbItem } from '@/types';
 import AppLayout from '@/layouts/AppLayout.vue';
-import CategoriesLayout from '@/layouts/categories/Layout.vue';
 import type { CategoryType } from '@/types/category';
 
-// const { categories } = usePage().props as unknown as {
-//     categories: CategoryType[];
-// };
 
 const props = defineProps<{
     categories: CategoryType[]

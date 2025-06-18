@@ -27,7 +27,6 @@ const breadcrumbs: BreadcrumbItem[] = [
         href: '',
     },
 ];
-// const props = defineProps({ category: CategoryType });
 const props = defineProps<{
   category: CategoryType
 }>()
